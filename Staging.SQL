@@ -1,8 +1,7 @@
 -- Creating External Staging Area from S3
 create
 or replace stage my_external_stage_from_s3 URL = 's3://dw-snowflake-course-sravya' CREDENTIALS = (
-    AWS_KEY_ID = 'AKIAYBV6JB2WQONCMSNB
-' AWS_SECRET_KEY = '5P1CRy895/7/G1tnJuvOHYIB9ftkztqISBPgKYGl'
+    AWS_KEY_ID = '-------' AWS_SECRET_KEY = '-------'
 ) -- Description of the stage - Connected S3 bucket to the SnowflakeDB.
 DESC stage my_external_stage_from_s3;
 -- Altering external stage - When we want to alter AWS access keys
